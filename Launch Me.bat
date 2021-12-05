@@ -153,7 +153,7 @@
     explorer .\
 	timeout 3 > NUL
 	start https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm
-	if exist "%PUBLIC%\VLC Media Player.lnk" ( del "%PUBLIC%\Desktop\VLC Media Player.lnk" /Q /S ) >> %LOGFILE% 2>> %ERROR%
+	if exist "%PUBLIC%\Desktop\VLC Media Player.lnk" ( del "%PUBLIC%\Desktop\VLC Media Player.lnk" /Q /S ) >> %LOGFILE% 2>> %ERROR%
     if exist "%PUBLIC%\Desktop\Adobe Acrobat DC.lnk" ( del "%PUBLIC%\Desktop\Adobe Acrobat DC.lnk" /Q /S ) >> %LOGFILE% 2>> %ERROR%
 	goto exit
 
